@@ -63,9 +63,9 @@ const App = () => {
   } else {
     routes = (
       <Switch>
-        <Route path="/" exact>
+        {/* <Route path="/" exact>
           <Users />
-        </Route>
+        </Route> */}
         <Route path="/:userId/places" exact>
           <UserPlaces />
         </Route>
@@ -87,11 +87,11 @@ const App = () => {
         logout: logout,
       }}
     >
-      <Router>
+      {/* <Router>
         <MainNavigation />
         <main>{routes}</main>
       </Router>
-    </AuthContext.Provider>
+    </AuthContext.Provider> */}
   );
 };
 
